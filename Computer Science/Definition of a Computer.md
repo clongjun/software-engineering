@@ -1,0 +1,208 @@
+# 제1장. 컴퓨터의 정의 
+## Definition of a Computer
+
+### 1. 학습 목표
+
+- 컴퓨터의 개념과 역할을 이해한다.
+- 컴퓨터의 역사적 발전 과정을 파악한다.
+- 정보 처리 장치로서 컴퓨터의 5대 기능을 설명할 수 있다.
+
+### 1. Learning Objectives
+
+- Understand the concept and role of a computer.
+- Understand the historical development process of computers.
+- Be able to explain the five major functions of a computer as an information processing device.
+
+---
+
+### 2. 컴퓨터란?
+
+컴퓨터(Computer)는 **데이터를 입력받아 정해진 프로그램(명령어)에 따라 처리하고, 결과를 정보 형태로 변환하여 출력하는 정보 처리 시스템**이다.
+
+초기의 컴퓨터는 복잡한 수학 계산을 목적으로 개발되었지만, 현재는 텍스트, 이미지, 오디오, 비디오 등 다양한 디지털 정보를 처리하고 저장하는 **범용 정보 처리 장치**로 발전하였다.
+
+**컴퓨터 시스템 구성**
+
+컴퓨터 시스템은 하드웨어(Hardware)와 소프트웨어(Software)로 구성된다.
+
+| 구분 | 설명 | 특징 | 예시 |
+|---|---|---|---|
+| 하드웨어(Hardware) | 실제로 만질 수 있는 물리적인 장치 | 컴퓨터의 구성 부품이며 직접 조작 가능한 장치 | CPU(중앙처리장치), 메모리(RAM), 저장장치(SSD, HDD), 입력장치, 출력장치 |
+| 소프트웨어(Software) | 컴퓨터를 동작시키는 프로그램 | 하드웨어가 작업을 수행하도록 명령을 제공하는 프로그램 | 운영체제(OS), 응용 프로그램, 게임, 웹 브라우저 |
+
+**하드웨어와 소프트웨어 관계**
+
+| 구분 | 역할 |
+|---|---|
+| 하드웨어 | 실제 계산과 데이터 처리를 수행하는 장치 |
+| 소프트웨어 | 하드웨어에게 작업 방법을 지시하는 명령어 집합 |
+| 운영체제(OS) | 하드웨어와 소프트웨어를 연결하고 관리하는 역할 |
+
+### 2. What is a Computer?
+
+A **computer** is an **information processing system that receives data, processes it according to predefined programs (instructions), converts the results into meaningful information, and outputs them**.
+
+Early computers were developed mainly for complex mathematical calculations, but today they have evolved into **general-purpose information processing devices** that can process and store various types of digital information such as text, images, audio, and video.
+
+**Computer System Components**
+
+A computer system consists of hardware and software.
+
+| Category | Description | Characteristics | Examples |
+|---|---|---|---|
+| Hardware | Physical devices that can be touched | Components of a computer that can be directly operated | CPU (Central Processing Unit), Memory (RAM), Storage Devices (SSD, HDD), Input Devices, Output Devices |
+| Software | Programs that operate a computer | A set of instructions that allows hardware to perform tasks | Operating System (OS), Applications, Games, Web Browsers |
+
+**Relationship Between Hardware and Software**
+
+| Category | Role |
+|---|---|
+| Hardware | Devices that perform actual calculations and data processing |
+| Software | A set of instructions that tells hardware how to perform tasks |
+| Operating System (OS) | Manages and connects hardware and software |
+
+---
+
+### 3. 컴퓨터의 5대 기능
+
+컴퓨터는 정보를 처리하기 위해 다음 5가지 기능을 수행한다.
+
+| 기능 | 설명 | 예 |
+|---|---|---|
+| 입력(Input) | 데이터와 명령어를 받아 처리 가능한 형태로 변환 | 키보드, 마우스 |
+| 기억(Storage) | 데이터와 처리 결과를 저장하고 필요할 때 사용 | RAM, SSD |
+| 연산(Operation) | 산술 및 논리 계산 수행 | CPU의 ALU |
+| 제어(Control) | 명령어 해석 및 장치 동작 관리 | CPU 제어장치 |
+| 출력(Output) | 처리 결과를 사용자에게 전달 | 모니터, 프린터 |
+
+### 3. Five Major Functions of a Computer
+
+A computer performs the following five functions to process information.
+
+| Function | Description | Example |
+|---|---|---|
+| Input | Receives data and instructions and converts them into a processable form | Keyboard, Mouse |
+| Storage | Stores data and processing results for later use | RAM, SSD |
+| Operation | Performs arithmetic and logical calculations | CPU's ALU |
+| Control | Interprets instructions and manages device operations | CPU Control Unit |
+| Output | Delivers processed results to the user | Monitor, Printer |
+
+---
+
+### 4. 컴퓨터의 동작 과정
+
+컴퓨터는 다음 순서로 동작한다.
+
+
+입력
+↓
+기억
+↓
+연산
+↓
+제어
+↓
+출력
+
+
+예)
+
+1. 사용자가 키보드로 숫자 입력
+2. 메모리에 데이터 저장
+3. CPU가 계산 수행
+4. 제어장치가 실행 순서 관리
+5. 결과를 화면에 출력
+
+### 4. Computer Operating Process
+
+A computer operates in the following sequence.
+
+
+Input  
+↓  
+Storage  
+↓  
+Operation  
+↓  
+Control  
+↓  
+Output
+
+
+Example)
+
+1. The user enters numbers using a keyboard.
+2. Data is stored in memory.
+3. The CPU performs calculations.
+4. The control unit manages the execution order.
+5. The result is displayed on the screen.
+
+---
+
+### 5. 핵심 용어 정리
+
+| 용어 | 설명 |
+|---|---|
+| 데이터(Data) | 처리 전의 원시 자료 |
+| 정보(Information) | 처리되어 의미를 가진 결과 |
+| 프로그램 | 컴퓨터가 수행할 명령어의 집합 |
+| 알고리즘 | 문제 해결을 위한 절차 |
+| CPU | 명령어 실행과 제어를 담당하는 중앙처리장치 |
+| ALU | 산술 및 논리 연산 담당 장치 |
+| 레지스터 | CPU 내부의 빠른 임시 저장 공간 |
+| RAM | 실행 중인 데이터를 저장하는 메모리 |
+| 저장장치 | 데이터를 영구 저장하는 장치 |
+| 입출력장치 | 데이터 입력과 결과 출력을 담당하는 장치 |
+
+### 5. Key Terms Summary
+
+| Term | Description |
+|---|---|
+| Data | Raw materials before processing |
+| Information | A meaningful result after processing |
+| Program | A set of instructions that a computer executes |
+| Algorithm | A procedure for solving a problem |
+| CPU | The central processing unit responsible for executing instructions and controlling operations |
+| ALU | A unit responsible for arithmetic and logical operations |
+| Register | A fast temporary storage area inside the CPU |
+| RAM | Memory that stores data currently being executed |
+| Storage Device | A device that permanently stores data |
+| Input/Output Device | A device responsible for data input and result output |
+
+---
+
+### 핵심 정리
+
+- 컴퓨터는 **데이터를 입력받아 처리하고 결과를 출력하는 정보 처리 장치**이다.
+- 컴퓨터는 **하드웨어와 소프트웨어**로 구성된다.
+- 컴퓨터의 5대 기능은 다음과 같다.
+
+
+입력(Input)
+기억(Storage)
+연산(Operation)
+제어(Control)
+출력(Output)
+
+
+- CPU는 컴퓨터의 핵심 장치이며 연산과 제어를 담당한다.
+- 컴퓨터는 기계식 계산기에서 시작하여 현대의 인공지능 시스템까지 발전하였다.
+
+### Key Summary
+
+- A computer is an **information processing device that receives data, processes it, and outputs results**.
+- A computer consists of **hardware and software**.
+- The five major functions of a computer are:
+
+
+Input  
+Storage  
+Operation  
+Control  
+Output
+
+
+- The CPU is the core component of a computer and is responsible for operations and control.
+- Computers have evolved from mechanical calculators into modern artificial intelligence systems.
+
+---
