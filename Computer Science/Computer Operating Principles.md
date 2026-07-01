@@ -1,0 +1,426 @@
+# 제3장. 컴퓨터의 동작 원리 (Computer Operating Principles)
+
+컴퓨터는 **프로그램과 데이터를 메모리에 저장하고, CPU가 명령어를 순차적으로 실행하여 정보를 처리하는 전자 시스템**이다. 이러한 동작은 **폰 노이만 구조(Von Neumann Architecture)** 를 기반으로 하며, 모든 데이터는 **0과 1(Binary)** 로 표현되고, CPU는 **명령어 실행 과정(Fetch → Decode → Execute)** 을 반복하면서 프로그램을 수행한다.
+
+A computer is **an electronic system that stores programs and data in memory and processes information by executing instructions sequentially through the CPU.** This operation is based on the **Von Neumann Architecture**, where all data is represented using **0s and 1s (Binary)**, and the CPU performs programs by repeatedly executing the **instruction cycle (Fetch → Decode → Execute).**
+
+---
+
+### 1. 데이터의 표현
+컴퓨터는 모든 데이터를 **0과 1(Binary)** 의 조합으로 저장하고 처리한다. 문자, 숫자, 이미지, 음성, 영상 등 모든 정보는 내부적으로 이진수(Binary)로 표현된다.
+
+### 1. Data Representation
+
+A computer stores and processes all data using combinations of **0s and 1s (Binary)**. All types of information, including characters, numbers, images, audio, and video, are internally represented as binary data.
+
+---
+
+#### 1-1. 비트(Bit)
+
+비트(Bit)는 **컴퓨터가 표현할 수 있는 가장 작은 데이터 단위**이다.
+
+### 1-1. Bit
+
+A bit is **the smallest unit of data that a computer can represent.**
+
+---
+
+#### 특징
+
+* Binary Digit의 약자
+* 0 또는 1의 값만 표현
+* 전기 신호의 ON/OFF 상태를 의미
+
+#### Characteristics
+
+* Short for Binary Digit
+* Represents only the value 0 or 1
+* Represents the ON/OFF state of electrical signals
+
+---
+
+### 1-2. 바이트(Byte)
+
+바이트(Byte)는 데이터를 저장하는 기본 단위이다.
+
+### 1-2. Byte
+
+A byte is the basic unit used for storing data.
+
+---
+
+#### 특징
+
+* **1 Byte = 8 Bit**
+* 영문자 1개를 저장할 수 있는 크기
+
+#### Characteristics
+
+* **1 Byte = 8 Bits**
+* A size that can store one English character
+
+---
+
+### 1-3. 데이터 저장 단위
+
+| 단위 | 크기 |
+|---|---:|
+| 1 Byte (B) | 8 Bit |
+| 1 Kilobyte (KB) | 1,024 Byte |
+| 1 Megabyte (MB) | 1,024 KB |
+| 1 Gigabyte (GB) | 1,024 MB |
+| 1 Terabyte (TB) | 1,024 GB |
+| 1 Petabyte (PB) | 1,024 TB |
+| 1 Exabyte (EB) | 1,024 PB |
+| 1 Zettabyte (ZB) | 1,024 EB |
+| 1 Yottabyte (YB) | 1,024 ZB |
+
+### 1-3. Data Storage Units
+
+| Unit | Size |
+|---|---:|
+| 1 Byte (B) | 8 Bits |
+| 1 Kilobyte (KB) | 1,024 Bytes |
+| 1 Megabyte (MB) | 1,024 KB |
+| 1 Gigabyte (GB) | 1,024 MB |
+| 1 Terabyte (TB) | 1,024 GB |
+| 1 Petabyte (PB) | 1,024 TB |
+| 1 Exabyte (EB) | 1,024 PB |
+| 1 Zettabyte (ZB) | 1,024 EB |
+| 1 Yottabyte (YB) | 1,024 ZB |
+
+---
+
+### 1-4. 데이터의 종류
+
+| 데이터 종류 | 설명 | 예시 |
+|---|---|---|
+| Boolean | 참(True) 또는 거짓(False)를 표현 | true, false |
+| Character | 문자 1개를 저장 | A, B, 가 |
+| Integer | 정수를 저장 | -10, 0, 100 |
+| Floating Point | 실수를 저장 | 3.14, 0.001 |
+| String | 여러 문자의 집합 | "Computer" |
+| Image | 픽셀 정보를 저장 | JPG, PNG |
+| Audio | 음성 데이터를 저장 | MP3, WAV |
+| Video | 영상 데이터를 저장 | MP4, AVI |
+
+### 1-4. Types of Data
+
+| Data Type | Description | Example |
+|---|---|---|
+| Boolean | Represents True or False values | true, false |
+| Character | Stores one character | A, B |
+| Integer | Stores whole numbers | -10, 0, 100 |
+| Floating Point | Stores decimal numbers | 3.14, 0.001 |
+| String | A collection of multiple characters | "Computer" |
+| Image | Stores pixel information | JPG, PNG |
+| Audio | Stores sound data | MP3, WAV |
+| Video | Stores video data | MP4, AVI |
+
+### 1-5. 자료형(Data Type)
+
+자료형(Data Type)은 **컴퓨터가 데이터를 저장하고 처리하는 방식을 정의하는 데이터의 종류**를 의미한다.
+
+| 자료형 | 설명 | 일반적인 크기 | 예시 |
+|---|---|---:|---|
+| Boolean | 논리값 저장 | 1 Byte | true |
+| Character (char) | 문자 1개 저장 | 1 Byte | 'A' |
+| Short | 작은 정수 저장 | 2 Byte | 1000 |
+| Integer (int) | 정수 저장 | 4 Byte | 100 |
+| Long | 큰 정수 저장 | 8 Byte | 10000000000 |
+| Float | 단정밀도 실수 저장 | 4 Byte | 3.14 |
+| Double | 배정밀도 실수 저장 | 8 Byte | 3.1415926535 |
+| String | 문자열 저장 | 가변 크기 | "Computer" |
+
+### 1-5. Data Type
+
+A data type refers to **the type of data that defines how a computer stores and processes information.**
+
+| Data Type | Description | Typical Size | Example |
+|---|---|---:|---|
+| Boolean | Stores logical values | 1 Byte | true |
+| Character (char) | Stores one character | 1 Byte | 'A' |
+| Short | Stores small integers | 2 Bytes | 1000 |
+| Integer (int) | Stores integers | 4 Bytes | 100 |
+| Long | Stores large integers | 8 Bytes | 10000000000 |
+| Float | Stores single-precision floating-point numbers | 4 Bytes | 3.14 |
+| Double | Stores double-precision floating-point numbers | 8 Bytes | 3.1415926535 |
+| String | Stores a sequence of characters | Variable size | "Computer" |
+
+---
+
+#### 자료형 비교
+
+| 구분 | 저장 값 | 소수 표현 | 대표 용도 |
+|---|---|---|---|
+| Boolean | 논리값 | × | 조건식 |
+| Character | 문자 | × | 문자 저장 |
+| Integer | 정수 | × | 계산 |
+| Float | 실수 | ○ | 일반 실수 계산 |
+| Double | 고정밀 실수 | ○ | 과학 계산 |
+| String | 문자열 | × | 문장 저장 |
+
+#### Data Type Comparison
+
+| Type | Stored Value | Decimal Support | Main Usage |
+|---|---|---|---|
+| Boolean | Logical value | × | Conditions |
+| Character | Character | × | Storing text |
+| Integer | Whole number | × | Calculations |
+| Float | Floating-point number | ○ | General decimal calculations |
+| Double | High-precision floating-point number | ○ | Scientific calculations |
+| String | Text | × | Storing sentences |
+
+---
+
+### 1-6. 문자의 표현
+
+컴퓨터는 문자를 숫자로 변환하여 저장한다.
+
+### 1-6. Character Representation
+
+A computer stores characters by converting them into numbers.
+
+---
+
+#### ASCII
+
+* 영문자와 숫자를 표현하는 문자 코드
+* 7비트(128개 문자) 기반
+* 확장 ASCII는 8비트 사용
+
+#### ASCII
+
+* A character encoding system used to represent English letters and numbers
+* Based on 7 bits (128 characters)
+* Extended ASCII uses 8 bits
+
+---
+
+#### Unicode
+
+* 전 세계 모든 문자를 표현하기 위한 국제 표준
+* 한글, 일본어, 중국어 등 다양한 언어 지원
+* UTF-8, UTF-16, UTF-32 등의 인코딩 방식 사용
+
+#### Unicode
+
+* An international standard for representing characters from around the world
+* Supports various languages such as Korean, Japanese, and Chinese
+* Uses encoding formats such as UTF-8, UTF-16, and UTF-32
+
+---
+
+### 1-7. 수의 표현
+
+컴퓨터는 내부적으로 **2진수(Binary)** 를 사용하며, 필요에 따라 8진수와 16진수를 함께 사용한다.
+
+| 진법 | 사용 숫자 | 예시 |
+|---|---|---|
+| 2진수(Binary) | 0, 1 | 101101₂ |
+| 8진수(Octal) | 0 ~ 7 | 73₈ |
+| 10진수(Decimal) | 0 ~ 9 | 59₁₀ |
+| 16진수(Hexadecimal) | 0 ~ 9, A ~ F | 3B₁₆ |
+
+
+### 1-7. Number Representation
+
+A computer internally uses **binary numbers**, and hexadecimal and octal numbers are also used when necessary.
+
+| Number System | Digits Used | Example |
+|---|---|---|
+| Binary | 0, 1 | 101101₂ |
+| Octal | 0 ~ 7 | 73₈ |
+| Decimal | 0 ~ 9 | 59₁₀ |
+| Hexadecimal | 0 ~ 9, A ~ F | 3B₁₆ |
+
+---
+
+### 1-8. 데이터 표현의 특징
+
+* 모든 데이터는 이진수(Binary)로 저장된다.
+* 데이터의 크기는 Bit와 Byte를 기준으로 표현한다.
+* 문자는 ASCII와 Unicode를 사용하여 표현한다.
+* 숫자는 2진수, 8진수, 10진수, 16진수로 표현할 수 있다.
+* 이미지, 음성, 영상 또한 모두 이진 데이터로 저장된다.
+
+
+### 1-8. Characteristics of Data Representation
+
+* All data is stored as binary data.
+* Data size is represented using Bits and Bytes.
+* Characters are represented using ASCII and Unicode.
+* Numbers can be represented using binary, octal, decimal, and hexadecimal systems.
+* Images, audio, and videos are also stored as binary data.
+
+---
+
+### 2. 컴퓨터의 동작 흐름 (Computer Operation Flow)
+
+컴퓨터는 프로그램을 실행하기 위해 **명령어를 메모리에서 가져오고(Fetch), 해석한 뒤(Decode), 실행(Execute)** 하는 과정을 반복한다.
+
+### 2. Computer Operation Flow
+
+A computer repeatedly performs the process of **fetching instructions from memory (Fetch), interpreting them (Decode), and executing them (Execute)** in order to run programs.
+
+---
+
+### 2-1. 명령어 실행 과정
+
+#### Fetch (인출)
+
+주기억장치(RAM)에 저장된 명령어를 CPU로 가져오는 단계이다.
+
+#### Decode (해독)
+
+가져온 명령어를 CPU가 이해할 수 있도록 해석하는 단계이다.
+
+#### Execute (실행)
+
+해석된 명령어를 ALU와 제어장치를 이용하여 실제 수행하는 단계이다.
+
+### 2-1. Instruction Execution Process
+
+#### Fetch
+
+The stage where instructions stored in main memory (RAM) are brought into the CPU.
+
+#### Decode
+
+The stage where the CPU interprets the fetched instruction.
+
+#### Execute
+
+The stage where the interpreted instruction is performed using the ALU and Control Unit.
+
+---
+
+### 2-2. Fetch–Decode–Execute 사이클
+
+CPU는 다음 과정을 매우 빠르게 반복하면서 프로그램을 실행한다.
+
+```text
+Fetch
+   ↓
+Decode
+   ↓
+Execute
+   ↓
+다음 명령어
+   ↓
+Fetch ...
+````
+
+### 2-2. Fetch–Decode–Execute Cycle
+
+The CPU executes programs by repeating the following process at a very high speed.
+
+```text
+Fetch
+   ↓
+Decode
+   ↓
+Execute
+   ↓
+Next Instruction
+   ↓
+Fetch ...
+```
+
+---
+
+### 2-3. 메모리와 CPU의 데이터 이동
+
+프로그램 실행 시 데이터는 다음과 같은 순서로 이동한다.
+
+```text
+보조기억장치
+      ↓
+주기억장치(RAM)
+      ↓
+CPU
+      ↓
+주기억장치(RAM)
+      ↓
+출력장치
+```
+
+### 2-3. Data Movement Between Memory and CPU
+
+When a program is executed, data moves through the following sequence.
+
+```text
+Secondary Storage
+        ↓
+Main Memory (RAM)
+        ↓
+CPU
+        ↓
+Main Memory (RAM)
+        ↓
+Output Device
+```
+
+---
+
+### 2-4. 프로그램 실행 흐름
+
+프로그램이 실행되는 전체 과정은 다음과 같다.
+
+1. 프로그램을 보조기억장치에서 읽는다.
+2. 운영체제가 프로그램을 RAM에 적재한다.
+3. CPU가 RAM에서 명령어를 가져온다.
+4. 명령어를 해석하고 실행한다.
+5. 실행 결과를 RAM에 저장한다.
+6. 결과를 출력장치로 전달한다.
+
+### 2-4. Program Execution Flow
+
+The entire process of executing a program is as follows.
+
+1. The program is loaded from secondary storage.
+2. The operating system loads the program into RAM.
+3. The CPU fetches instructions from RAM.
+4. The CPU decodes and executes the instructions.
+5. The execution results are stored in RAM.
+6. The results are delivered to the output device.
+
+---
+
+### 2-5. 컴퓨터의 전체 동작 과정
+
+| 단계          | 설명                        |
+| ----------- | ------------------------- |
+| 입력(Input)   | 사용자로부터 데이터와 명령어를 입력받는다.   |
+| 저장(Storage) | 입력된 데이터와 프로그램을 메모리에 저장한다. |
+| 처리(Process) | CPU가 명령어를 실행하여 데이터를 처리한다. |
+| 출력(Output)  | 처리된 결과를 사용자에게 전달한다.       |
+
+### 2-5. Overall Computer Operation Process
+
+| Stage   | Description                                       |
+| ------- | ------------------------------------------------- |
+| Input   | Receives data and instructions from the user.     |
+| Storage | Stores input data and programs in memory.         |
+| Process | The CPU executes instructions and processes data. |
+| Output  | Delivers processed results to the user.           |
+
+---
+
+# 핵심 정리
+
+* **폰 노이만 구조**는 프로그램과 데이터를 동일한 메모리에 저장하는 현대 컴퓨터의 기본 구조이다.
+* 컴퓨터는 모든 정보를 **0과 1(Binary)** 로 표현하며, 데이터의 크기는 **Bit**와 **Byte**를 기준으로 나타낸다.
+* 데이터는 **Boolean, 문자, 정수, 실수, 문자열** 등 다양한 자료형으로 저장된다.
+* 문자는 **ASCII** 와 **Unicode** 를 통해 표현되며, 숫자는 **2진수, 8진수, 10진수, 16진수**로 나타낼 수 있다.
+* CPU는 **Fetch → Decode → Execute** 사이클을 반복하여 프로그램을 실행한다.
+* 프로그램은 **보조기억장치 → RAM → CPU → 출력장치**의 흐름을 거쳐 실행되고 결과가 사용자에게 전달된다.
+
+# Key Summary
+
+* The **Von Neumann Architecture** is the fundamental structure of modern computers, where programs and data are stored in the same memory.
+* Computers represent all information using **0s and 1s (Binary)**, and data size is measured using **Bits** and **Bytes**.
+* Data is stored using various data types such as **Boolean, Character, Integer, Floating Point, and String**.
+* Characters are represented using **ASCII** and **Unicode**, while numbers can be represented using **Binary, Octal, Decimal, and Hexadecimal** systems.
+* The CPU executes programs by repeatedly performing the **Fetch → Decode → Execute** cycle.
+* Programs are executed through the flow of **Secondary Storage → RAM → CPU → Output Device**, and results are delivered to users.
