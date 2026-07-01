@@ -1,4 +1,4 @@
-# 1-2 컴퓨터의 구조 (Computer Architecture)
+# 2. 컴퓨터의 구조 (Computer Architecture)
 
 컴퓨터는 데이터를 입력받아 처리한 후 결과를 출력하는 시스템으로, 여러 하드웨어 장치가 서로 협력하여 동작한다. 컴퓨터의 기본 구조는 **입력장치(Input Device)**, **중앙처리장치(CPU)**, **기억장치(Memory)**, **보조기억장치(Secondary Storage)**, **출력장치(Output Device)** 로 구성된다.
 
